@@ -1,0 +1,31 @@
+<p>
+  property-binding works!
+</p>
+<h3>Binding data to property using Bracket[ ]</h3>
+
+<img [src]="website.logo"/>
+<a [href]="website.url" [textContent]="website.name"> </a>
+<p [textContent]="website.description"> </p>
+<button [disabled]="flag">Submit</button>  
+
+<h3>Binding data to property using bind- </h3>
+    
+    <img bind-src="website.logo"/>
+    <a bind-href="website.url" bind-textContent="website.name"> </a>
+    <p  [ngClass]="'one two'" bind-textContent="website.description"> </p>
+    <button bind-disabled="!flag">Submit</button> 
+
+<h3>Binding data to property using InterPolation</h3>
+    
+<img src="{{website.logo}}"/>
+<a href="{{website.url}}" textContent="{{website.name}}"> </a>
+<p textContent="{{website.description}}"> </p> <br>
+
+<h3>Binding data to property using style.</h3>
+<div [style.color]="'red'">Property binding for Components and directives will be covered later</div>
+<div style="color:red"></div>
+<br>
+<h3>Binding data using ngStyle</h3>
+<div [ngStyle]="getMyStyles()">
+	NgStyle Example
+</div> 

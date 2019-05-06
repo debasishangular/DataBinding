@@ -1,0 +1,11 @@
+<p>
+  two-way-data-binding Sample!
+</p>
+<input [(ngModel)] ="myMsg"/> 
+{{myMsg}}
+
+<input [ngModel] ="myMsg2" (ngModelChange) ="myMsg2=$event"/> 
+{{myMsg2}}
+
+<input [value] ="myMsg3" (input)="myMsg3=$event.target.value"/> 
+{{myMsg3}}
